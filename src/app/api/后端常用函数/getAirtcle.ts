@@ -102,7 +102,8 @@ export interface Article {
       };
       schema: {
         "@context": string;
-        "@graph": any[]; // You can further define this if needed
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        "@graph": any[]; 
       };
     };
     _links: {
